@@ -49,3 +49,13 @@
 .workersContainer{
     margin-top: 35px;
 }
+
+.verMas{
+    width: fit-content;
+    border: 1px solid black;
+    margin-top: 35px;
+    cursor: pointer;
+    padding: 11px 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
