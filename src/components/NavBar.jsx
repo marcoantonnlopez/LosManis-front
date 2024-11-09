@@ -16,7 +16,7 @@ const links = [
 
 const NavBar = () => {
     return <div class="navbar">
-        <img src={magnaLogo} className="logo" alt="Magna logo" height={48}/>
+        <img src={magnaLogo} className="logo" alt="Magna logo" height={20}/>
         <div class="links">
             {links.map(x => (
                 <Link class="navButtons" to={x.href}>{x.name}</Link>
