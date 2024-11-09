@@ -2,7 +2,7 @@ import React from "react";
 import './Dashboard.css';
 import DataContainer from "../components/dataContainer";    
 import BasicPie from "../components/BasicPie";
-import WorkerDashboard from "../components/workerDashboard";
+import WorkerDashboard from "../components/WorkerDashboard";
 
 const Dashboard = () => {
 
@@ -20,7 +20,10 @@ const Dashboard = () => {
                 <div class="titleContainer">Empleados por salvar</div>
                 <div class="subtitleContainer">Empleados con mayor riesgo de renuncia</div>
                 <div class="workersContainer">
-                    <WorkerDashboard number="1" name="Mani" position="Gerente" risk="83"></WorkerDashboard>
+                    <WorkerDashboard number="1" name="Beesie Cooper" position="Gerente" risk="83"></WorkerDashboard>
+                    <WorkerDashboard number="2" name="Theresa Webb" position="Ensamblaje" risk="80"></WorkerDashboard>
+                    <WorkerDashboard number="3" name="Albert Flores" position="Ensamblaje" risk="75"></WorkerDashboard>
+                    <WorkerDashboard number="4" name="Darlene Robertson" position="Ensamblaje" risk="65"></WorkerDashboard>
                 </div>
             </div>
             <div class="graphContainer">
