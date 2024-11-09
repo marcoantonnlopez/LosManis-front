@@ -16,7 +16,7 @@ const WorkerDashboard = (props) => {
             <div>{position}</div>
         </div>
         <div class="riskWorker">
-            <WorkerGraph></WorkerGraph>
+            <div><WorkerGraph riskPercentage={risk}></WorkerGraph></div>
         </div>
     </div>;
 };
