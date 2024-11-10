@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <Link to="/">
-                <img src={magnaLogo} className="logo" alt="Magna logo" height={80} />
+                <img src={magnaLogo} className="logo" alt="Magna logo" height={40} />
             </Link>
             <div className="inc">
             Todo el contenido © 2024, Magna International Inc. Todos los Derechos Reservados

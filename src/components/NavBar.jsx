@@ -18,7 +18,11 @@ const NavBar = () => {
     return (
         <div className="navbar">
             <Link to="/">
+<<<<<<< HEAD
                 <img src={magnaLogo} className="logo" alt="Magna logo" height={80} />
+=======
+                <img src={magnaLogo} className="logo" alt="Magna logo" height={40} />
+>>>>>>> 37fb03fcede39782a602c990b47c09707090a23b
             </Link>
             <div className="links">
                 {links.map((x, index) => (
