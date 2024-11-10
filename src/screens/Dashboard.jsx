@@ -4,9 +4,10 @@ import DataContainer from "../components/dataContainer";
 import BasicPie from "../components/BasicPie";
 import WorkerDashboard from "../components/WorkerDashboard";
 import Department from "../components/Department";
+import { useNavigate } from 'react-router-dom';
 
-// const Dashboard = () => {
-    function Dashboard ()  {
+function Dashboard ()  {
+    const navigate = useNavigate();
 
     return <div class="dashboard">
         <div class="title">Dashboard</div>
@@ -27,7 +28,7 @@ import Department from "../components/Department";
                     <WorkerDashboard number="3" name="Albert Flores" position="Ensamblaje" risk="75"></WorkerDashboard>
                     <WorkerDashboard number="4" name="Darlene Robertson" position="Ensamblaje" risk="65"></WorkerDashboard>
                 </div>
-                <div class="verMas">
+                <div class="verMas" onClick={() => navigate("/workers")} >
                     <div>Ver más</div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
                 </div>
@@ -39,7 +40,6 @@ import Department from "../components/Department";
                     <div class="graph">
                         <BasicPie></BasicPie>
                     </div>
-                    <div class="graphColors"></div>
                 </div>
             </div>
         </div>
@@ -49,13 +49,14 @@ import Department from "../components/Department";
             <div class="departmentsWrapper">
                 <Department risk={83} nameDepartment="Pintura"></Department>
                 <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={45} nameDepartment="Pintura"></Department>
+                <Department risk={8} nameDepartment="Pintura"></Department>
+                <Department risk={15} nameDepartment="Pintura"></Department>
+                <Department risk={95} nameDepartment="Pintura"></Department>
+                <Department risk={53} nameDepartment="Pintura"></Department>
                 <Department risk={83} nameDepartment="Pintura"></Department>
-                <Department risk={83} nameDepartment="Pintura"></Department>
-                <Department risk={83} nameDepartment="Pintura"></Department>
-                <Department risk={83} nameDepartment="Pintura"></Department>
-                <Department risk={83} nameDepartment="Pintura"></Department>
-                <Department risk={83} nameDepartment="Pintura"></Department>
-                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={7} nameDepartment="Pintura"></Department>
+                <Department risk={10} nameDepartment="Pintura"></Department>
             </div>
         </div>
     </div>;

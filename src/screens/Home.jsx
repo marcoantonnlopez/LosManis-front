@@ -4,12 +4,11 @@ import './Home.css';
 import AUNAlogo from '../assets/AUNAlogo.svg';
 import Magnalogo from '../assets/MagnaLogoLanding.svg';
 import Button from "../components/Button.jsx";
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
-    const handleHomeClick = () => {
-        console.log('Botón de Home clicado');
-    };
-
+  const navigate = useNavigate();
+  
   return (
         <><section>
           <img className='Magnalogo' src={Magnalogo} alt="Magnalogo" />
@@ -17,7 +16,7 @@ function Home() {
           <img className='AUNAlogo' src={AUNAlogo} alt="AUNAlogo" />
           <hr />
           <p className='slogan'>Anticipa las salidas y convierte el talento en fuerza <span>Magna </span></p>
-          <Button label="Ir al Dashboard" onClick={handleHomeClick} />
+          <Button label="Ir al Dashboard" onClick={() => navigate("/dashboard")}  />
       </section></>
   );
 }

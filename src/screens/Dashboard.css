@@ -2,7 +2,7 @@
     padding: 56px 135px;
     background-color: white;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 .title{
@@ -34,6 +34,11 @@
 .graphContainer{
     display: flex;
     flex-direction: column;
+    margin-right: 80px;
+}
+
+.graphRow{
+    margin-top: 40px;
 }
 
 .titleContainer{
