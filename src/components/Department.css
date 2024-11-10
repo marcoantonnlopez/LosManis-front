@@ -2,15 +2,15 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    gap: 95px;
-    padding: 33px 25px;
+    gap: 40px;
+    padding: 16px 25px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .infoContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .nameDepartment{
@@ -20,7 +20,7 @@
 
 .statusDepartment{
     display: flex;
-    gap: 8px;
+    flex-direction: column;
 }
 
 .riskDepartment{
@@ -30,7 +30,7 @@
 
 .messageDepartment{
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 svg {

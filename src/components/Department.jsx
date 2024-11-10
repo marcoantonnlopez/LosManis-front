@@ -1,7 +1,9 @@
 import React from "react";
 import './Department.css';
+import { useNavigate } from 'react-router-dom';
 
 const Department = (props) => {
+    const navigate = useNavigate();
     let nameDepartment = props.nameDepartment;
     let risk = props.risk;
     let number = props.number;
@@ -14,12 +16,12 @@ const Department = (props) => {
     else 
         color = '#FBD813'
 
-    return <div class="Department">
+    return <div class="Department" onClick={() => navigate("/workers")} >
         <div class="infoContainer" style={{ '--color-status': color }}>
             <div class="nameDepartment">{nameDepartment}</div>
             <div class="statusDepartment">
-                <div class="messageDepartment">{number} Trabajadores en riesgo</div>
-                <div class="riskDepartment">({risk}%)</div>
+                <div class="messageDepartment" style={{ color: 'var(--color-status)' }}>{number} Trabajadores en riesgo</div>
+                <div class="riskDepartment" style={{ color: 'var(--color-status)' }}>({risk}%)</div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>

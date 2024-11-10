@@ -4,7 +4,11 @@ import Dashboard from "./screens/Dashboard.jsx";
 import Workers from "./screens/Workers.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./screens/Home.jsx";
+<<<<<<< HEAD
 import Survey from "./screens/survey.jsx";
+=======
+import Footer from "./components/Footer.jsx";
+>>>>>>> ce9d0585fc29eb2ad8ce138647f2d04e2c2abbfc
 
 function App() {
 
@@ -18,6 +22,7 @@ function App() {
         <Route path="/workers" element={<Workers/>}/>
         <Route path="/EncuestaInduccion" element={<Survey/>}/>
       </Routes>
+      <Footer></Footer>
     </Router>
     </>
   )
