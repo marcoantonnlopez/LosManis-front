@@ -9,6 +9,10 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
   const navigate = useNavigate();
   
+    const handleHomeClick = () => {
+        navigate('/Login'); 
+     };
+
   return (
         <><section>
           <img className='Magnalogo' src={Magnalogo} alt="Magnalogo" />

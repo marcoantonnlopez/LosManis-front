@@ -8,6 +8,8 @@ import Home from "./screens/Home.jsx";
 import Survey from "./screens/Survey.jsx";
 import Footer from "./components/Footer.jsx";
 import Login from "./screens/LogIn.jsx";
+import FollowUpSurvey from "./screens/FollowUpSurvey.jsx";
+import FinalSurvey from "./screens/FinalSurvey.jsx";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/EncuestaDeSalida" element={<FinalSurvey />} />
+          <Route path="/EncuestaSeguimiento" element={<FollowUpSurvey />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/workers" element={<WorkersList />} />
