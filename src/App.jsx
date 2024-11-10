@@ -4,6 +4,7 @@ import Dashboard from "./screens/Dashboard.jsx";
 import Workers from "./screens/Workers.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./screens/Home.jsx";
+import Survey from "./screens/survey.jsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/workers" element={<Workers/>}/>
+        <Route path="/EncuestaInduccion" element={<Survey/>}/>
       </Routes>
     </Router>
     </>

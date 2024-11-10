@@ -51,8 +51,6 @@ button {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
-    /* font-weight: auto; */
-    /* line-height: normal; */
     cursor: pointer;
     transition: transform 0.3s ease; 
 }

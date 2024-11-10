@@ -11,7 +11,7 @@ function Home() {
 
     const handleHomeClick = () => {
         navigate('/dashboard'); 
-    };
+ u    };
 
   return (
         <><section>
