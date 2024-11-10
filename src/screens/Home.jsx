@@ -4,10 +4,13 @@ import './Home.css';
 import AUNAlogo from '../assets/AUNAlogo.svg';
 import Magnalogo from '../assets/MagnaLogoLanding.svg';
 import Button from "../components/Button.jsx";
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+    const navigate = useNavigate();
+
     const handleHomeClick = () => {
-        console.log('Botón de Home clicado');
+        navigate('/dashboard'); 
     };
 
   return (
