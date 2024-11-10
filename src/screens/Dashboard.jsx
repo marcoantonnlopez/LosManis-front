@@ -3,11 +3,12 @@ import './Dashboard.css';
 import DataContainer from "../components/dataContainer";    
 import BasicPie from "../components/BasicPie";
 import WorkerDashboard from "../components/WorkerDashboard";
+import Department from "../components/Department";
 
 const Dashboard = () => {
 
     return <div class="dashboard">
-        <div class="title">Tablero</div>
+        <div class="title">Dashboard</div>
         <div class="dataWrapper">
             <DataContainer number="400" title="Empleados encuestados"></DataContainer>
             <DataContainer number="180" title="Empleados con bajo riesgo de renuncia"></DataContainer>
@@ -27,7 +28,7 @@ const Dashboard = () => {
                 </div>
                 <div class="verMas">
                     <div>Ver más</div>
-                    <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
                 </div>
             </div>
             <div class="graphContainer">
@@ -39,6 +40,21 @@ const Dashboard = () => {
                     </div>
                     <div class="graphColors"></div>
                 </div>
+            </div>
+        </div>
+        <div class="departmentsContainer">
+            <div class="titleContainer">Departamentos</div>
+            <div class="subtitleContainer">Departamentos con mayor empleados con riesgo de renuncias</div>
+            <div class="departmentsWrapper">
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
+                <Department risk={83} nameDepartment="Pintura"></Department>
             </div>
         </div>
     </div>;
