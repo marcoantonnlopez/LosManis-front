@@ -7,6 +7,7 @@ export default function BasicPie() {
       colors={['#D93636', '#FBD813', '#2CD06B']}
       series={[
         {
+          arcLabel: (item) => `${item.value}%`,
           cx: 200,
           innerRadius: 60,
           outerRadius: 180,
