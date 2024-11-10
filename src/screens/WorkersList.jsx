@@ -6,7 +6,7 @@ const WorkersList = () => {
 
     return <div class="workersList">
         <div class="title">Empleados en riesgo de rotacion</div>
-        <div>Empleados con su probabilidad de renuncia</div>
+        <div class="subtitleContainer">Empleados con su probabilidad de renuncia</div>
         <div class="table">
             <div class="header">
                 <div>Num</div>

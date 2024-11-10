@@ -1,6 +1,91 @@
 .worker{
-    padding: 56px 135px;
+    padding: 80px 135px;
     background-color: white;
     height: 100%;
     width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.workerContent{
+    display: flex;   
+    justify-content: space-between;
+}
+
+.workerInfo{
+    display: flex;
+}
+
+.userName{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.riskMessageProfile{
+    width: 170px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.info{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.infoSubtitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.data{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.justInfo{
+    margin-left: 48px;
+}
+
+.riskWorkerGraph{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 48px;
+}
+
+.workerFeeling{
+    display: flex;
+    margin: 80px 0;
+    gap: 40px;
+    justify-content: center;
+}
+
+.workerFeeling svg{
+    width: 67px;
+    height: 67px;
+}
+
+.gradientBar{
+    width: 70%;
+    height: 67px;
+    background: linear-gradient(to left, #2CD06B, #FBD813, #D93636);
+}
+
+.sad{
+    fill:#D93636;
+}
+
+.happy{
+    fill:#2CD06B;
+}
+
+.causesWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+    gap: 80px 180px;
+    justify-content: space-evenly;
 }
