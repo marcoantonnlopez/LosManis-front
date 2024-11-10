@@ -5,7 +5,8 @@ import BasicPie from "../components/BasicPie";
 import WorkerDashboard from "../components/WorkerDashboard";
 import Department from "../components/Department";
 
-const Dashboard = () => {
+// const Dashboard = () => {
+    function Dashboard ()  {
 
     return <div class="dashboard">
         <div class="title">Dashboard</div>

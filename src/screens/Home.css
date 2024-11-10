@@ -1,0 +1,62 @@
+body {
+    background-color: #000000;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../assets/bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    gap: 20px;
+}
+
+.AUNAlogo {
+    height: 25%;
+}
+
+hr {
+    /* color: white; */
+    border: 1px solid #ffffff; width: 55%;
+}
+
+.Magnalogo {
+    width: 50%;
+}
+
+.slogan {
+    color: #ffffff;
+    font-size: 33px;
+}
+
+span {
+    font-weight: 700;
+}
+
+button {
+    background-color: #0057b300;
+    display: flex;
+    padding: 20px 35px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    /* font-weight: auto; */
+    /* line-height: normal; */
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+button {
+    transform: scale(1.1);
+}

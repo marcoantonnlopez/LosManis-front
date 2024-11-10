@@ -1,5 +1,8 @@
 .dashboard{
     padding: 56px 135px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
 }
 
 .title{
