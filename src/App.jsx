@@ -4,6 +4,7 @@ import Dashboard from "./screens/Dashboard.jsx";
 import Workers from "./screens/Workers.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./screens/Home.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/workers" element={<Workers/>}/>
       </Routes>
+      <Footer></Footer>
     </Router>
     </>
   )

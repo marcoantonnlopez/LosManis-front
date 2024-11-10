@@ -1,7 +1,9 @@
 import React from "react";
 import './Department.css';
+import { useNavigate } from 'react-router-dom';
 
 const Department = (props) => {
+    const navigate = useNavigate();
     let nameDepartment = props.nameDepartment;
     let risk = props.risk;
     let number = props.number;
@@ -14,7 +16,7 @@ const Department = (props) => {
     else 
         color = '#FBD813'
 
-    return <div class="Department">
+    return <div class="Department" onClick={() => navigate("/workers")} >
         <div class="infoContainer" style={{ '--color-status': color }}>
             <div class="nameDepartment">{nameDepartment}</div>
             <div class="statusDepartment">

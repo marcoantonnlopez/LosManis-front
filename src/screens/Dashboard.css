@@ -81,6 +81,7 @@
 
 .departmentsWrapper{
     margin-top: 64px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px 100px;
