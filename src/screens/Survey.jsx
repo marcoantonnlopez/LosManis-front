@@ -1,6 +1,6 @@
 // Survey.js
 import React, { useState } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import FeedbackSlider from '../components/slider.jsx';
 // import FeedbackSlider from '../components/FeedbackSlider';
 import './Survey.css';

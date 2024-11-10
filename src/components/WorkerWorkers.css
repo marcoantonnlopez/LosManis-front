@@ -1,0 +1,68 @@
+.workerWorkers{
+    width: auto;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.numWorker{
+    width: 6%;
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.nameWorker{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.positionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.positionWorker{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.riskWorker{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.riskMessage{
+    width: 50px;
+    font-size: 15;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ver{
+    width: fit-content;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 11px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.workersTableRight{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+}
