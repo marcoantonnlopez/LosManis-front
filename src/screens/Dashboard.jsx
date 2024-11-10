@@ -4,9 +4,11 @@ import DataContainer from "../components/dataContainer";
 import BasicPie from "../components/BasicPie";
 import WorkerDashboard from "../components/WorkerDashboard";
 
-const Dashboard = () => {
+// const Dashboard = () => {
+    function Dashboard ()  {
 
-    return <div class="dashboard">
+    return (
+    <div class="dashboard">
         <div class="title">Tablero</div>
         <div class="dataWrapper">
             <DataContainer number="400" title="Empleados encuestados"></DataContainer>
@@ -37,7 +39,8 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
-    </div>;
-};
+    </div>
+    );
+}
 
 export default Dashboard;
